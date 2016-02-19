@@ -1,19 +1,20 @@
-# Hello, GitWorld!
+<H2>Hello, GitWorld!</H2>
 
 These are my notes from the Feb. 18, 2016 Galvanize Meetup: "GitHub & Git". This is the process I followed to create this "hello-world" repository locally on my Windows machine, and then add, commit, and push it to my GitHub account.
 
----
+<hr />
 
-## The Setup:
+<H3>The Setup</H3>
 
-1) download git for windows http://git-scm.com/downloads
-2) use all default settings when installing
-3) create a GitHub account if you have not yet
-4) get a text editor (Atom, Notepad++, etc.) if you don't have one yet
-5) go to https://github.com/GalvanizeOpenSource/Learn-To-Code-GitHub-Git
-6) read the instructions there
-...
-starting up - try to do the following:
+<ol><li>download git for windows http://git-scm.com/downloads</li>
+<li>use all default settings when installing</li>
+<li>create a GitHub account if you have not yet</li>
+<li>get a text editor (Atom, Notepad++, etc.) if you don't have one yet</li>
+<li>go to https://github.com/GalvanizeOpenSource/Learn-To-Code-GitHub-Git</li>
+<li>read the instructions there</li>
+
+<H3>Getting Started</H3>
+
 1) Navigate to the place you want to create your folder with Git (use: cd <dir name>)
 2) See what’s in that folder (use: ls)
 3) Create a new directory called “hello-world” (type: mkdir hello-world)
