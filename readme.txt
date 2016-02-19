@@ -1,9 +1,11 @@
-first readme text
-testing git and github
-galvanize meetup
-February 18, 2016
-...
-set up:
+# Hello, GitWorld!
+
+These are my notes from the Feb. 18, 2016 Galvanize Meetup: "GitHub & Git". This is the process I followed to create this "hello-world" repository locally on my Windows machine, and then add, commit, and push it to my GitHub account.
+
+---
+
+## The Setup:
+
 1) download git for windows http://git-scm.com/downloads
 2) use all default settings when installing
 3) create a GitHub account if you have not yet
@@ -44,3 +46,47 @@ Any time you want to save changes in Git, you must follow this 3-step command pr
     $ git add <FILENAME> // add the files you’d like to commit (save) to change
 * Step 3: Commit the changes with a message
     $ git commit -m “<your commit message>” // save your changes with a MANDATORY note
+...
+Working Remotely
+Now that you've got a taste of working locally, let's take it up a notch. 
+First, we need to re-configure your Git to work with your GitHub.
+...
+Configure Git for GitHub
+1) In Bash, enter in the command to sync your folder with your GitHub account:
+    $ git config --global user.username "USeRnAMe" // this is case-sensitive and does not need "<" or ">"
+2) Verify that the configuration was successful here:
+    $ git-it verify
+	NOTE: error - "command not found"
+	
+
+Pushing to GitHub
+
+Pushing is another way to say that we're doing to upload code to GitHub from your local computer.
+
+    Gut check: what's the difference between PUSHING and COMMITTING?
+
+Exercise: Create a Remote Repository in GitHub
+
+    Go to github.com, log in, and click the '+' in the top right to create a new repository.
+    Give it a name that matches your local repository's name, 'hello-world', and a short description.
+    Make it public.
+    Don't initialize with a README because we already have a file, locally, named 'readme.txt'.
+    Leave .gitignore and license on 'none'.
+    Click create repository!
+
+Connect the remote to your GitHub repo
+
+In Bash, in the folder of your choosing:
+
+$ git remote add origin <URLfromGitHub>
+
+Bonus: you can also change the remote to another URL:
+
+$ git remote set-url <RemoteName> <URL>
+
+Time to push!
+
+Here is the command to push from your original remote copy to the GitHub master:
+
+$ git push origin master
+
