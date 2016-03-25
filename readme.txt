@@ -85,19 +85,16 @@ Push = upload code to GitHub from your local computer.
     5. Leave .gitignore and license on 'none'.
     6. Click create repository!
 
-Connect the remote to your GitHub repo
+#### Connecting the remote to your GitHub repo
 
-In Bash, in the folder of your choosing:
+In Bash, in the folder of your choosing, perform the following:
 
-$ git remote add origin <URLfromGitHub>
+    1. $ git remote add origin <URLfromGitHub>
+	Bonus: you can also change the remote to another URL:
+    2. $ git remote set-url <RemoteName> <URL>
 
-Bonus: you can also change the remote to another URL:
-
-$ git remote set-url <RemoteName> <URL>
-
-Time to push!
+### Time to push changes!
 
 Here is the command to push from your original remote copy to the GitHub master:
 
-$ git push origin master
-
+    $ git push origin master
